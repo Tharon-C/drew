@@ -1,17 +1,23 @@
 a {
-  color: #00A9FF; }
+  color: #947848; }
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#877b71), color-stop(32%, #f4eae2), color-stop(68%, #f4eae2), to(#877b71));
+  background: -webkit-linear-gradient(left, #877b71 0%, #f4eae2 32%, #f4eae2 68%, #877b71 100%);
+  background: linear-gradient(to right, #877b71 0%, #f4eae2 32%, #f4eae2 68%, #877b71 100%); }
 
 /* wrapper */
 .wrapper, .wrap {
-  max-width: 2000px;
   width: 100%;
   margin: 0 auto;
   position: relative; }
 
 .page-wrapper, .p-wrap {
+  font-family: 'Cutive', sans-serif;
   position: relative;
   margin: auto;
   width: 100%;
+  max-width: 1100px;
   padding-right: 20px;
   padding-left: 20px; }
 
@@ -21,12 +27,18 @@ a {
 /*======================================================== 
 header 
 ==========================================================*/
+.header {
+  height: 680px;
+  background: url('../img/home-bkg-1.jpg');
+  background-size: cover;
+  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.8); }
+
 /* business information across the top of header */
 .business-info {
-  background: #0386C9;
   padding: 5px; }
   .business-info a {
-    color: #0386C9; }
+    color: #47342C; }
   .business-info .top-wdgt-l {
     color: white;
     float: left; }
@@ -42,49 +54,62 @@ header
 logo
 ================================================================= */
 .logo {
-  float: left;
-  width: 150px;
+  top: -32px;
+  right: 0;
+  width: 620px;
   display: block;
-  position: relative;
+  position: absolute;
   padding: 10px; }
   .logo a:hover {
     color: black !important; }
 
 .logo-img {
+  width: 100%;
   margin: 0; }
 
 /* ============================================================
 nav 
 ================================================================*/
 .nav {
+  width: 100%;
+  top: 75px;
   padding: 0;
   display: block;
-  position: relative;
+  position: absolute;
   z-index: 10;
-  background: #00A9FF;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.21);
-          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.21); }
+  background: rgba(255, 255, 255, 0.89); }
   .nav ul {
     margin: 0;
     padding: 0;
-    float: right;
-    position: absolute;
-    right: 0;
+    position: relative;
+    left: 0;
     bottom: 0; }
   .nav li {
     position: relative;
     display: inline-block;
     margin-left: -4px; }
+    .nav li::after {
+      top: 15px;
+      right: 0;
+      z-index: -1;
+      position: absolute;
+      content: "";
+      border-right: solid 1px black;
+      height: 20px; }
+    .nav li:last-child::after {
+      border: none; }
     .nav li a {
-      text-shadow: rgba(255, 255, 255, 0.4) 0 1px 0;
       display: block;
-      color: #0386C9;
-      padding: 18px 30px;
-      text-transform: uppercase;
-      font-size: 14px;
-      position: relative; }
-  .nav a:hover {
-    background: #00A9FF; }
+      font-family: 'Cutive', sans-serif;
+      color: black;
+      padding: 15px 30px;
+      font-variant: small-caps;
+      font-size: 16px;
+      position: relative;
+      font-weight: 800; }
+      .nav li a:hover {
+        background: white;
+        color: black; }
   .nav ul.sub-menu {
     display: none; }
     .nav ul.sub-menu a {
@@ -117,9 +142,7 @@ banner
 footer items
 =================================================================== */
 .footer-items {
-  background: #e5e5e5;
   padding: 25px 0;
-  border-top: solid 1px #F2F2F2;
   color: #525252; }
   .footer-items ul {
     padding-left: 0; }
@@ -145,7 +168,7 @@ footer items
 footer 
 ================================================================*/
 footer {
-  background: #00A9FF;
+  background: #47342C;
   text-align: center;
   color: white;
   padding: 10px;
@@ -159,41 +182,52 @@ footer {
 .swatch {
   height: 5em; }
 
+.bkg-2 {
+  background: url('../img/home-bkg-2.jpg');
+  background-size: cover;
+  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.8); }
+
+.black-trans {
+  background: rgba(12, 12, 12, 0.92); }
+
 .color-1 {
-  background: #00A9FF; }
+  background: #947848; }
 
 .color-2 {
-  background: #0386C9; }
+  background: #47342C; }
 
 .color-3 {
-  background: #e5e5e5; }
+  background: #f4eae2; }
 
 .color-4 {
-  background: #F7A710; }
+  background: #C53F24; }
 
 .color-5 {
-  background: #9370E9; }
+  background: -webkit-gradient(linear, left top, right top, from(#877b71), color-stop(32%, #f4eae2), color-stop(68%, #f4eae2), to(#877b71));
+  background: -webkit-linear-gradient(left, #877b71 0%, #f4eae2 32%, #f4eae2 68%, #877b71 100%);
+  background: linear-gradient(to right, #877b71 0%, #f4eae2 32%, #f4eae2 68%, #877b71 100%); }
 
 .color-6 {
-  background: #DDD5F8; }
+  background: #C3C9CA; }
 
 .txt-color-1 {
-  color: #00A9FF; }
+  color: #947848; }
 
 .txt-color-2 {
-  color: #0386C9; }
+  color: #47342C; }
 
 .txt-color-3 {
-  color: #e5e5e5; }
+  color: #f4eae2; }
 
 .txt-color-4 {
-  color: #F7A710; }
+  color: #C53F24; }
 
 .txt-color-5 {
-  color: #9370E9; }
+  color: linear-gradient(to right, #877b71 0%, #f4eae2 32%, #f4eae2 68%, #877b71 100%); }
 
 .txt-color-6 {
-  color: #DDD5F8; }
+  color: #C3C9CA; }
 
 .txt-wht {
   color: white; }
@@ -208,41 +242,61 @@ ul li, ol li {
   line-height: 130%; }
 
 .headline-1 {
-  display: block;
-  font-family: 'Open Sans', sans-serif;
+  background: url('../img/left-headline-bkg.png') left 8px no-repeat, url('../img/right-headline-bkg.png') right 10px no-repeat;
+  display: table;
+  text-align: center;
+  padding: 30px 181px 35px;
+  font-family: 'Cutive', sans-serif;
+  font-variant: small-caps;
   font-weight: 700;
-  font-size: 53px;
+  font-size: 45px;
   line-height: 1.2em;
-  margin-bottom: 15px; }
+  margin: 0 auto 15px auto; }
+  .headline-1:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 28px;
+    height: 60px;
+    width: 100%;
+    border-top: solid 1px #47342C;
+    border-bottom: solid 1px #47342C; }
 
 .title-1 {
+  font-variant: small-caps;
   display: block;
-  font-family: 'Open Sans', sans-serif;
+  text-align: center;
   font-weight: 400;
-  font-size: 42px;
-  line-height: 1.2em;
-  margin-bottom: 15px; }
+  font-size: 30px;
+  line-height: 1.5em;
+  margin-bottom: 15px;
+  border-top: solid 1px #47342C;
+  border-bottom: solid 1px #47342C; }
 
 .sub-headline-1 {
+  font-variant: small-caps;
   letter-spacing: 0.3em;
   line-height: 1.2em;
   display: block;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 24px;
   margin-bottom: 10px; }
 
 .title-2 {
+  text-align: center;
+  font-variant: small-caps;
   display: block;
-  font: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.2em;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  border-top: solid 1px;
+  border-bottom: solid 1px; }
 
 .title-3 {
+  font-variant: small-caps;
   display: block;
-  font: 'Open Sans', sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 1.2em;
@@ -254,13 +308,13 @@ ul li, ol li {
 .ws-form {
   margin-top: -1.5em; }
 
-input, textarea {
+input[type='text'], input[type='email'], input[type='url'], textarea {
   /* Use for styling text based form elements, like name, email, password. 
-  Button/submit specific styles below, those will override */
+    Button/submit specific styles below, those will override */
   display: block;
   padding: 0.5em;
   margin-bottom: 0.75em;
-  border: 0.1em solid lightgrey;
+  border: 0.1em solid #47342C;
   width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -270,9 +324,9 @@ input, textarea {
 
 input:focus, textarea:focus {
   outline: none;
-  border-color: #00A9FF; }
+  border-color: #947848; }
 
-input[type='button'], input[type='submit'], button, .button {
+input[type='button'], input[type='submit'], .button, [class^="btn-"] {
   border: none;
   line-height: 1;
   cursor: pointer;
@@ -281,23 +335,24 @@ input[type='button'], input[type='submit'], button, .button {
           transition: all 0.3s ease;
   display: block;
   margin-bottom: 0.75em;
-  margin-bottom: 0.75rem; }
+  margin-bottom: 0.75rem;
+  border-radius: 5px; }
 
 .form-btn-1, .btn-1 {
   color: white;
-  background-color: #0386C9; }
+  background-color: black; }
   .form-btn-1:hover, .btn-1:hover {
-    background-color: #026597; }
+    background-color: black; }
   .form-btn-1:active, .form-btn-1:focus, .btn-1:active, .btn-1:focus {
-    background-color: #0386C9; }
+    background-color: black; }
 
 .btn-2 {
   color: white;
-  background-color: #F7A710; }
+  background-color: #C53F24; }
   .btn-2:hover {
-    background-color: #cd8807; }
+    background-color: #9a311c; }
   .btn-2:active, .btn-2:focus {
-    background-color: #F7A710; }
+    background-color: #C53F24; }
 
 .btn-3 {
   font-size: 0.875em;
@@ -330,6 +385,26 @@ input[type='button'], input[type='submit'], button, .button {
    ========================================================================= */
 .img-1 {
   padding: 10px;
-  background: #e5e5e5;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.21);
-          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.21); }
+  background: white;
+  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.8); }
+
+.contact-icon {
+  background: url('../img/contact-bkg.png') center center no-repeat;
+  background-size: 40%;
+  height: 36px; }
+  .contact-icon a {
+    font-size: 0 !important; }
+    .contact-icon a:hover {
+      background: none !important; }
+
+/* =========================================================================
+   =Plugin Hacks
+   ========================================================================= */
+h2.audioalbum {
+  font-family: 'Cutive', sans-serif;
+  font-variant: small-caps;
+  text-transform: none !important; }
+
+.audioalbum {
+  background: #000 !important; }

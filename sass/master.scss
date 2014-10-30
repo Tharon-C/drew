@@ -25,6 +25,7 @@
 
 
 $font-1:'Open Sans', sans-serif;
+$font-2:'Cutive', sans-serif;
 $grey-1: white;
 $grey-2: #F2F2F2;
 $grey-3: rgb(229, 229, 229);
@@ -32,30 +33,36 @@ $grey-4:lightgrey;
 $grey-5:grey;
 $grey-6:darkgrey;
 $grey-7:black;
-$color-1:#00A9FF;
-$color-2:#0386C9;
-$color-3:rgb(229, 229, 229);
-$color-4:#F7A710;
-$color-5:#9370E9;
-$color-6:#DDD5F8;
-$shadow-1:0 1px 2px rgba(0, 0, 0, 0.21);
+$color-1:#947848;
+$color-2:#47342C;
+$color-3:#f4eae2;
+$color-4:#C53F24;
+$color-5:linear-gradient(to right, #877b71 0%,#f4eae2 32%,#f4eae2 68%,#877b71 100%);
+$color-6:#C3C9CA;
+$bkg-2:url('../img/home-bkg-2.jpg');
+$shadow-1:0 1px 8px rgba(0, 0, 0, 0.8);
 
 a {
   color:$color-1;
 }
 
+body {
+  background:$color-5;
+}
+
 /* wrapper */
 .wrapper, .wrap {
-  max-width: 2000px;
   width: 100%;
   margin:0 auto;
   position:relative;
 }
 
 .page-wrapper, .p-wrap {
+  font-family: $font-2;
   position:relative;
   margin: auto;
   width: 100%;
+  max-width: 1100px;
   padding-right:20px;
   padding-left:20px;
 }
@@ -67,12 +74,16 @@ a {
 /*======================================================== 
 header 
 ==========================================================*/
-
+.header {
+  height: 680px;
+  background: url('../img/home-bkg-1.jpg');
+    background-size: cover;
+  box-shadow:$shadow-1;
+}
 
 /* business information across the top of header */
 
 .business-info {
-  background:$color-2;
     padding: 5px;
       a {
 
@@ -99,10 +110,11 @@ logo
 ================================================================= */
 
 .logo {
-  float:left;
-  width:150px;
+  top: -32px;
+  right: 0;
+  width: 620px;
   display: block;
-  position: relative;
+  position: absolute;
   padding:10px;
   a:hover {
     color: black !important;
@@ -110,6 +122,7 @@ logo
 }
 
 .logo-img {
+  width:100%;
   margin: 0;
 }
 
@@ -119,37 +132,54 @@ nav
 
 
 .nav {
-  padding:0;
+    width:100%;
+    top:75px;
+    padding:0;
     display: block;
-    position: relative;
+    position: absolute;
     z-index: 10;
-    background: $color-1;
-    box-shadow:$shadow-1;
+    background: rgba(255, 255, 255, 0.89);
    ul {
       margin: 0;
       padding: 0;
-      float: right;
-      position:absolute;
-      right:0;
+      position:relative;
+      left:0;
       bottom:0;
      }
     li {
       position:relative;
       display:inline-block;
       margin-left: -4px;
-      a {
-         @include letterpress(.4);
-        display:block;
-        color: $color-2;
-        padding: 18px 30px;
-        text-transform: uppercase;
-        font-size: 14px;
-        position: relative;
+      &::after {
+        top:15px;
+        right:0;
+        z-index: -1;
+        position:absolute;
+        content:"";
+        border-right:solid 1px black;
+        height: 20px;
       }
-    }
-    a:hover {
-       background: $color-1;
-    }
+      &:last-child::after {
+        border:none;
+      }
+      a {
+        display:block;
+        font-family: $font-2;
+        color: black;
+        padding: 15px 30px;
+        font-variant: small-caps;
+        font-size: 16px;
+        position: relative;
+        font-weight: 800;
+        &:hover {
+          background: $grey-1;
+          color:black;
+          }
+        }
+       
+
+     }
+    
     ul.sub-menu {
     display:none;
     a{
@@ -191,9 +221,7 @@ footer items
 =================================================================== */
 
 .footer-items {
-    background:$color-3;
     padding: 25px 0;
-    border-top: solid 1px $grey-2;
     color: rgb(82, 82, 82);
     ul {
       padding-left:0;
@@ -224,7 +252,7 @@ footer
 ================================================================*/
 
 footer {
-  background:$color-1;
+  background:$color-2;
   text-align:center;
   color: $grey-1;
   padding: 10px;
@@ -240,6 +268,16 @@ footer {
    ========================================================================== */
 .swatch {
   height: 5em;
+}
+
+.bkg-2 {
+  background:$bkg-2;
+  background-size:cover;
+  box-shadow:$shadow-1;
+}
+
+.black-trans {
+  background:rgba(12, 12, 12, 0.92);
 }
 
 .color-1 {
@@ -304,29 +342,47 @@ ul li, ol li {line-height: 130%;}
 
 
 .headline-1 {
-  display:block;
-  font-family:$font-1;
+  background: url('../img/left-headline-bkg.png') left 8px no-repeat, url('../img/right-headline-bkg.png') right 10px no-repeat;
+  display: table;
+  text-align: center;
+  padding: 30px 181px 35px;
+  font-family: $font-2;
+  font-variant: small-caps;
   font-weight: 700;
-  font-size:53px;
+  font-size: 45px;
   line-height: 1.2em;
-   margin-bottom:15px;
+  margin: 0 auto 15px auto;
+  &:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 28px;
+    height: 60px;
+    width: 100%;
+    border-top: solid 1px $color-2;
+    border-bottom: solid 1px $color-2;
+  }
 }
 
 
 .title-1 {
+  font-variant: small-caps;
   display:block;
-  font-family:$font-1;
+  text-align: center;
   font-weight: 400;
-  font-size:42px;
-  line-height: 1.2em;
+  font-size:30px;
+  line-height: 1.5em;
    margin-bottom:15px;
+   border-top:solid 1px $color-2;
+   border-bottom:solid 1px $color-2;
 }
 
 .sub-headline-1 {
+  font-variant: small-caps;
   letter-spacing: .3em;
   line-height: 1.2em;
   display:block;
-  font-family:$font-1;
   font-weight: 600;
   font-size:24px;
   margin-bottom:10px;
@@ -334,17 +390,20 @@ ul li, ol li {line-height: 130%;}
 
 
 .title-2 {
+  text-align:center;
+  font-variant: small-caps;
   display:block;
-  font:$font-1;
   font-weight:400;
   font-size:24px;
   line-height: 1.2em;
   margin-bottom:15px;
+  border-top: solid 1px ;
+  border-bottom: solid 1px;
 }
 
 .title-3 {
+  font-variant: small-caps;
   display:block;
-  font:$font-1;
   font-weight:800;
   font-size:16px;
   line-height: 1.2em;
@@ -358,31 +417,34 @@ ul li, ol li {line-height: 130%;}
   margin-top: -1.5em;
 }
 
-input, textarea {
-  /* Use for styling text based form elements, like name, email, password. 
-  Button/submit specific styles below, those will override */
-  display: block;
-  padding: .5em;
-  margin-bottom: .75em;
-  border: .1em solid $grey-4;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  -ms-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
-  resize: none;
-}
+
+
+  input[type='text'], input[type='email'], input[type='url'], textarea {
+    /* Use for styling text based form elements, like name, email, password. 
+    Button/submit specific styles below, those will override */
+    display: block;
+    padding: .5em;
+    margin-bottom: .75em;
+    border: .1em solid $color-2;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    resize: none;
+  }
+
 
 input:focus, textarea:focus {
   outline: none;
   border-color: $color-1;
 }
 
-input[type='button'], input[type='submit'], button, .button {
+input[type='button'], input[type='submit'], .button, [class^="btn-"]  {
   border: none;
   line-height: 1;
   cursor: pointer;
@@ -391,12 +453,13 @@ input[type='button'], input[type='submit'], button, .button {
   display: block;
   margin-bottom: .75em;
   margin-bottom: .75rem;
+  border-radius: 5px;
 }
 
 
 .form-btn-1, .btn-1 {
   color: $grey-1;
-  @include btnHover($color-2);
+  @include btnHover(black);
 }
 
 .btn-2 {
@@ -435,9 +498,31 @@ input[type='button'], input[type='submit'], button, .button {
    ========================================================================= */
 .img-1 {
   padding:10px;
-  background:$grey-3;
+  background:$grey-1;
   box-shadow:$shadow-1;
 }
 
+.contact-icon {
+  background:url('../img/contact-bkg.png') center center no-repeat;
+  background-size:40%; 
+  height: 36px;
+  a {
+    font-size:0 !important;
+    &:hover {
+      background:none !important;
+    }
+  }
+}
+/* =========================================================================
+   =Plugin Hacks
+   ========================================================================= */
 
+h2.audioalbum {
+  font-family: $font-2;
+  font-variant: small-caps;
+  text-transform: none !important; 
+}
 
+.audioalbum {
+background: #000 !important;
+}

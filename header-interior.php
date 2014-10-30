@@ -57,6 +57,6 @@
 					</nav>
 					<!-- /nav -->
                 
-              <?php echo do_shortcode('[layerslider id="2"]'); ?> 
+            
 </header>
 			<!-- /header -->

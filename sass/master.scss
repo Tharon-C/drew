@@ -40,7 +40,7 @@ $color-4:#C53F24;
 $color-5:linear-gradient(to right, #877b71 0%,#f4eae2 32%,#f4eae2 68%,#877b71 100%);
 $color-6:#C3C9CA;
 $bkg-2:url('../img/home-bkg-2.jpg');
-$bkg-3: url('../img/bkg-3.png'), linear-gradient(to right, black 0%,white 32%,white 68%,black 100%);
+$bkg-3: url('../img/bkg-3.png'), radial-gradient(ellipse at center, #FBF4E7 40%, #88682E 110%);
 $shadow-1:0 1px 8px rgba(0, 0, 0, 0.8);
 
 a {
@@ -76,6 +76,8 @@ body {
 header 
 ==========================================================*/
 .header {
+  position:relative;
+  z-index: 2;
   height: 680px;
   background: url('../img/home-bkg-1.jpg');
     background-size: cover;
@@ -85,25 +87,23 @@ header
 /* business information across the top of header */
 
 .business-info {
-    padding: 5px;
-      a {
-
-        color: $color-2;
-    }
-    .top-wdgt-l {
-      color:$grey-1;
-      float: left;
-    }
-     .top-wdgt-r {
-      color:$grey-1;
-      float: right;
-    }
-
-      li {
-        display: inline-block;
-        margin-left: 20px;
-        color: white;
-    }
+  padding: 5px;
+    a {
+      color: $color-2;
+  }
+  .top-wdgt-l {
+    color:$grey-1;
+    float: left;
+  }
+   .top-wdgt-r {
+    color:$grey-1;
+    float: right;
+  }
+    li {
+      display: inline-block;
+      margin-left: 20px;
+      color: white;
+  }
 }
 
 /* ==============================================================
@@ -113,7 +113,7 @@ logo
 .logo {
   top: -32px;
   right: 0;
-  width: 620px;
+  width: 625px;
   display: block;
   position: absolute;
   padding:10px;
@@ -222,7 +222,7 @@ footer items
 =================================================================== */
 
 .footer-items {
-    padding: 25px 0;
+    padding: 0 0;
     color: rgb(82, 82, 82);
     ul {
       padding-left:0;
@@ -275,6 +275,15 @@ footer {
   background:$bkg-2;
   background-size:cover;
   box-shadow:$shadow-1;
+  position:relative;
+  z-index: 2;
+}
+
+.bkg-3 {
+  background:$bkg-3;
+  box-shadow:$shadow-1;
+  position:relative;
+  z-index: 1;
 }
 
 .black-trans {
@@ -435,6 +444,7 @@ ul li, ol li {line-height: 130%;}
     -o-transition: all .3s ease;
     transition: all .3s ease;
     resize: none;
+    background:rgba(255, 255, 255, 0.7);
   }
 
 
@@ -514,7 +524,7 @@ input[type='button'], input[type='submit'], .button, [class^="btn-"]  {
 }
 
 .social-header {
-  margin-top:150px;
+  margin: 151px 65px;
   padding:30px;
   display: inline-block;
   text-align: center;

@@ -231,12 +231,12 @@ if (function_exists('register_sidebar'))
 
     // Define Sidebar Top Right
     register_sidebar(array(
-        'name' => __('Top Right', 'Area for business info etc'),
-        'description' => __('Area for business info etc', 'html5blank'),
-        'id' => 'top-r',
-        'before_widget' => '<div id="%1$s" class="%2$s top-wdgt-r">',
+        'name' => __('Social', 'Area for Social Links in header'),
+        'description' => __('Area for Social Links in header', 'html5blank'),
+        'id' => 'social',
+        'before_widget' => '<div id="%1$s" class="%2$s black-trans txt-wht social-header">',
         'after_widget' => '</div>',
-        'before_title' => '<h3>',
+        'before_title' => '<h3 class="title-1">',
         'after_title' => '</h3>'
     ));
 

@@ -234,7 +234,7 @@ if (function_exists('register_sidebar'))
         'name' => __('Social', 'Area for Social Links in header'),
         'description' => __('Area for Social Links in header', 'html5blank'),
         'id' => 'social',
-        'before_widget' => '<div id="%1$s" class="%2$s black-trans txt-wht social-header">',
+        'before_widget' => '<div id="%1$s" class="%2$s l-full l-marg-s-0 black-trans txt-wht social-header">',
         'after_widget' => '</div>',
         'before_title' => '<h3 class="title-1">',
         'after_title' => '</h3>'

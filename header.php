@@ -57,7 +57,7 @@
 					</nav>
 					<!-- /nav -->
 					<div class="p-wrap">
-					<div class="col-1-2 pad-t-100px p-r">
+					<div class="col-1-2 l-full pad-t-100px p-r">
 					 <?php dynamic_sidebar('social'); ?>
 					</div>
 				</div>

@@ -40,6 +40,7 @@ $color-4:#C53F24;
 $color-5:linear-gradient(to right, #877b71 0%,#f4eae2 32%,#f4eae2 68%,#877b71 100%);
 $color-6:#C3C9CA;
 $bkg-2:url('../img/home-bkg-2.jpg');
+$bkg-3: url('../img/bkg-3.png'), linear-gradient(to right, black 0%,white 32%,white 68%,black 100%);
 $shadow-1:0 1px 8px rgba(0, 0, 0, 0.8);
 
 a {
@@ -47,7 +48,7 @@ a {
 }
 
 body {
-  background:$color-5;
+  background-image:$bkg-3;
 }
 
 /* wrapper */
@@ -277,7 +278,7 @@ footer {
 }
 
 .black-trans {
-  background:rgba(12, 12, 12, 0.92);
+  background:rgba(12, 12, 12, 0.8);
 }
 
 .color-1 {
@@ -360,8 +361,8 @@ ul li, ol li {line-height: 130%;}
     top: 28px;
     height: 60px;
     width: 100%;
-    border-top: solid 1px $color-2;
-    border-bottom: solid 1px $color-2;
+    border-top: solid 1px ;
+    border-bottom: solid 1px ;
   }
 }
 
@@ -374,8 +375,6 @@ ul li, ol li {line-height: 130%;}
   font-size:30px;
   line-height: 1.5em;
    margin-bottom:15px;
-   border-top:solid 1px $color-2;
-   border-bottom:solid 1px $color-2;
 }
 
 .sub-headline-1 {
@@ -513,6 +512,41 @@ input[type='button'], input[type='submit'], .button, [class^="btn-"]  {
     }
   }
 }
+
+.social-header {
+  margin-top:150px;
+  padding:30px;
+  display: inline-block;
+  text-align: center;
+}
+
+.social {
+  display: inline-block;
+  color:black;
+  background:rgba(250,250,250,.9);
+  font-size: 30px;
+  margin: 10px;
+  border-radius: 200px;
+  height: 55px;
+  width:55px;
+}
+
+.facebook {
+  padding:3px 15px 3px 18px;
+}
+
+.youtube {
+  padding:3px 10px 3px 14px;
+}
+
+.instagram {
+  padding:3px 10px 3px 15px;
+}
+
+.twitter {
+  padding:4px 12px 3px 15px;
+}
+
 /* =========================================================================
    =Plugin Hacks
    ========================================================================= */

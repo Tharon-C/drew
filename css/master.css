@@ -2,9 +2,9 @@ a {
   color: #947848; }
 
 body {
-  background: -webkit-gradient(linear, left top, right top, from(#877b71), color-stop(32%, #f4eae2), color-stop(68%, #f4eae2), to(#877b71));
-  background: -webkit-linear-gradient(left, #877b71 0%, #f4eae2 32%, #f4eae2 68%, #877b71 100%);
-  background: linear-gradient(to right, #877b71 0%, #f4eae2 32%, #f4eae2 68%, #877b71 100%); }
+  background-image: url('../img/bkg-3.png'), -webkit-gradient(linear, left top, right top, from(black), color-stop(32%, white), color-stop(68%, white), to(black));
+  background-image: url('../img/bkg-3.png'), -webkit-linear-gradient(left, black 0%, white 32%, white 68%, black 100%);
+  background-image: url('../img/bkg-3.png'), linear-gradient(to right, black 0%, white 32%, white 68%, black 100%); }
 
 /* wrapper */
 .wrapper, .wrap {
@@ -189,7 +189,7 @@ footer {
           box-shadow: 0 1px 8px rgba(0, 0, 0, 0.8); }
 
 .black-trans {
-  background: rgba(12, 12, 12, 0.92); }
+  background: rgba(12, 12, 12, 0.8); }
 
 .color-1 {
   background: #947848; }
@@ -260,8 +260,8 @@ ul li, ol li {
     top: 28px;
     height: 60px;
     width: 100%;
-    border-top: solid 1px #47342C;
-    border-bottom: solid 1px #47342C; }
+    border-top: solid 1px;
+    border-bottom: solid 1px; }
 
 .title-1 {
   font-variant: small-caps;
@@ -270,9 +270,7 @@ ul li, ol li {
   font-weight: 400;
   font-size: 30px;
   line-height: 1.5em;
-  margin-bottom: 15px;
-  border-top: solid 1px #47342C;
-  border-bottom: solid 1px #47342C; }
+  margin-bottom: 15px; }
 
 .sub-headline-1 {
   font-variant: small-caps;
@@ -397,6 +395,34 @@ input[type='button'], input[type='submit'], .button, [class^="btn-"] {
     font-size: 0 !important; }
     .contact-icon a:hover {
       background: none !important; }
+
+.social-header {
+  margin-top: 150px;
+  padding: 30px;
+  display: inline-block;
+  text-align: center; }
+
+.social {
+  display: inline-block;
+  color: black;
+  background: rgba(250, 250, 250, 0.9);
+  font-size: 30px;
+  margin: 10px;
+  border-radius: 200px;
+  height: 55px;
+  width: 55px; }
+
+.facebook {
+  padding: 3px 15px 3px 18px; }
+
+.youtube {
+  padding: 3px 10px 3px 14px; }
+
+.instagram {
+  padding: 3px 10px 3px 15px; }
+
+.twitter {
+  padding: 4px 12px 3px 15px; }
 
 /* =========================================================================
    =Plugin Hacks

@@ -32,7 +32,7 @@
                 <div class="business-info section-top clear">
                     
                     <div class="page-wrapper clear">
-                    <?php dynamic_sidebar('top-l'); ?>
+                   
                     <?php dynamic_sidebar('top-r'); ?>
 					</div>
                     
@@ -56,5 +56,10 @@
                  </div>
 					</nav>
 					<!-- /nav -->
+					<div class="p-wrap">
+					<div class="col-1-2 pad-t-100px p-r">
+					 <?php dynamic_sidebar('social'); ?>
+					</div>
+				</div>
       		</header>
 			<!-- /header -->

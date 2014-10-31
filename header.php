@@ -34,29 +34,26 @@
                     <div class="page-wrapper clear">
                    
                     <?php dynamic_sidebar('top-r'); ?>
-					</div>
+				</div>
                     
                 </div>
-
-
-					<!-- nav -->
-					<nav class="nav clear" role="navigation">
-    
-                        <div class="page-wrapper clear">    
-                        <!-- logo -->
-				    <div class="logo">
+                	<div class="p-wrap"><!-- logo -->
+ 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
 							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
 							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="logo-img">
 						</a>
                     </div>
-					<!-- /logo -->
-                           
-                            <?php  add_custom_nav_menu('menu-1'); ?>
-                 </div>
-					</nav>
-					<!-- /nav -->
-					<div class="p-wrap">
+                </div><!-- /logo -->
+
+					
+				<nav class="nav clear" role="navigation"><!-- nav -->
+                    <div class="page-wrapper clear">    
+                        <?php  add_custom_nav_menu('menu-1'); ?>
+             		</div>
+				</nav><!-- /nav -->
+					
+				<div class="p-wrap">
 					<div class="col-1-2 l-full pad-t-100px p-r">
 					 <?php dynamic_sidebar('social'); ?>
 					</div>

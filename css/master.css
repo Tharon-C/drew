@@ -55,12 +55,19 @@ header
 logo
 ================================================================= */
 .logo {
-  top: -32px;
+  z-index: 11;
+  top: 40px;
   right: 0;
   width: 625px;
   display: block;
   position: absolute;
   padding: 10px; }
+  @media (max-width: 60em) {
+    .logo {
+      width: 90%;
+      position: relative;
+      top: 0;
+      margin: auto; } }
   .logo a:hover {
     color: black !important; }
 
@@ -79,6 +86,9 @@ nav
   position: absolute;
   z-index: 10;
   background: rgba(255, 255, 255, 0.89); }
+  @media (max-width: 60em) {
+    .nav {
+      display: none; } }
   .nav ul {
     margin: 0;
     padding: 0;
@@ -413,6 +423,12 @@ input[type='button'], input[type='submit'], .button, [class^="btn-"] {
   padding: 30px;
   display: inline-block;
   text-align: center; }
+  @media (max-width: 60em) {
+    .social-header {
+      position: absolute;
+      bottom: -452px;
+      z-index: 4;
+      margin: 0; } }
 
 .social {
   display: inline-block;

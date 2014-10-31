@@ -209,7 +209,7 @@ img {display:block;vertical-align:bottom;}
   .l-4-5 {width: 80%;}
   .l-1-6 {width: 16.666666%;}
   .l-5-6 {width: 83.333333%;}
-  .hide-l-and-below {display: none;visibility: hidden;}
+  .l-hide, .hide-l-and-below {display: none;visibility: hidden;}
   .show-l-and-below {display: block;visibility: visible;}
   .l-pad-0 {padding:0;}
   .l-pad-5px {padding:5px;}

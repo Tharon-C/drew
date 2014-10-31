@@ -34,6 +34,9 @@ header
   background-size: cover;
   -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
           box-shadow: 0 1px 8px rgba(0, 0, 0, 0.8); }
+  @media (max-width: 60em) {
+    .header {
+      background-position: 20% center; } }
 
 /* business information across the top of header */
 .business-info {
@@ -273,6 +276,14 @@ ul li, ol li {
   font-size: 45px;
   line-height: 1.2em;
   margin: 0 auto 15px auto; }
+  @media (max-width: 60em) {
+    .headline-1 {
+      font-size: 22px;
+      background: none;
+      border-top: solid 1px;
+      border-bottom: solid 1px;
+      padding: 10px;
+      width: 100%; } }
   .headline-1:before {
     content: "";
     z-index: -1;
@@ -283,6 +294,9 @@ ul li, ol li {
     width: 100%;
     border-top: solid 1px;
     border-bottom: solid 1px; }
+    @media (max-width: 60em) {
+      .headline-1:before {
+        display: none; } }
 
 .title-1 {
   font-variant: small-caps;

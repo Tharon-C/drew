@@ -82,6 +82,9 @@ header
   background: url('../img/home-bkg-1.jpg');
   background-size: cover;
   box-shadow:$shadow-1;
+   @media (max-width: 60em) {
+    background-position: 20% center;
+   }
 }
 
 /* business information across the top of header */
@@ -372,6 +375,15 @@ ul li, ol li {line-height: 130%;}
   font-size: 45px;
   line-height: 1.2em;
   margin: 0 auto 15px auto;
+   @media (max-width: 60em) {
+    font-size: 22px;
+    background:none;
+     border-top: solid 1px ;
+    border-bottom: solid 1px ;
+    padding:10px;
+    width:100%;
+  }
+
   &:before {
     content: "";
     z-index: -1;
@@ -382,6 +394,9 @@ ul li, ol li {line-height: 130%;}
     width: 100%;
     border-top: solid 1px ;
     border-bottom: solid 1px ;
+     @media (max-width: 60em) {
+    display: none;
+   }
   }
 }
 
